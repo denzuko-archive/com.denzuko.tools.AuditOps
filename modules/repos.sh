@@ -1,14 +1,13 @@
 #!/bin/bash
 ###############################################################################
-# Linux Patch Auditor
-# Version: 1.0
 #
-# Based on assert.sh 1.0 - bash unit testing framework and AuditOps 0.1
+# AuditOps - version 1.0
+#
+# Based on assert.sh 1.0 - bash unit testing framework
 # http://github.com/lehmannro/assert.sh
 # http://github.com/denzuko/AuditOps
 #
 # AuditOps - Copyrighted 2013 Dwight Spencer. All rights Reserved.
-# Linux Patch Auditor - Copyrighted 2014 Firehost, Inc. All rights Reserved.
 # Licenced under GNUv3 licencing.
 #
 # Authors:
