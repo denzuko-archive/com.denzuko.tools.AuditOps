@@ -45,7 +45,7 @@ _LastUpdated() {
 
 _AvailableUpdates() {
   case "${DISTRO}" in
-	rpm) yum check-updates; return $?;;
+	rpm) yum check-update; return $?;;
 	deb) apt-get --assume-no -u upgrade; return $?;;
   esac
 }
