@@ -75,7 +75,8 @@ assert "[ \"$UpdateLog\" != \"\" ] && echo 0" "0" && echo "${UpdateLog}"
 PatchLog=$(_AvailableUpdates)
 case "$?" in
 	100) echo -ne "\n== Patches Available ==\n"
-	     assert "[ \"$PatchLog\" != \"\" ] && echo $?" "0" && echo "${PatchLog}";;
+	     assert "[ \"$PatchLog\" != \"\" ] && echo $?" "0"
+	     echo "${PatchLog}";;
 	  0) ;;
 esac
 assert_end "System Updates"
