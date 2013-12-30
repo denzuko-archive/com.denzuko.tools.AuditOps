@@ -41,7 +41,7 @@ echo
 ###############################################################################
 
 echo "= Linux Patch Audit ="
-echo -ne "$(hostname -I | rev | cut -d' ' -f1 | rev).$(date +%s)\n$(uptime)\n\n"
+echo -ne "$(hostname -I | awk '{ print $(NF) }').$(date +%s)\n$(uptime)\n\n"
 
 echo "== Repository Checks =="
 
