@@ -63,7 +63,7 @@ done
 
 panopta_url="$(_MonitoringAgentUrl)"
 assert "[ \"$panopta_url\" != \"\" ] && echo $?" "0"
-assert "_GET ${panopta_url}" "200" && curl
+assert "_GET ${panopta_url}" "200"
 assert_end "Reposistory Availablity"
 
 echo -ne "\n== Changes to repositories ==\n${MirrorList}\n"
@@ -80,5 +80,10 @@ case "$?" in
 	  0) ;;
 esac
 assert_end "System Updates"
+
+
+echo -ne "\n== Monitoring Agent installation == \N"
+package="/tmp/$(basename ${panopta url})"
+curl ${panopta_url} -s > "${package}"
 
 #vim: syn=shell ft=sh syn on:
