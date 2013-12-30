@@ -81,9 +81,8 @@ case "$?" in
 esac
 assert_end "System Updates"
 
-
-echo -ne "\n== Monitoring Agent installation == \N"
-package="/tmp/$(basename ${panopta url})"
-curl ${panopta_url} -s > "${package}"
+#echo -ne "\n== Monitoring Agent installation == \N"
+#package="/tmp/$(basename ${panopta url})"
+#curl ${panopta_url} -s > "${package}"
 
 #vim: syn=shell ft=sh syn on:
